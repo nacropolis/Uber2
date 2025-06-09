@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="?android:attr/windowBackground"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <!-- Mensaje de espera estilizado -->
+    <TextView
+        android:id="@+id/textEsperando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esperando..."
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:letterSpacing="0.05"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Lista de salas con fondo y separación -->
+    <ListView
+        android:id="@+id/listaSalas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>
